@@ -1,8 +1,6 @@
 package com.github.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class DemoController {
@@ -15,6 +13,11 @@ public class DemoController {
     @PostMapping("/depts")
     public void depts(){
         System.out.println("depts");
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public void deleteEmps(@PathVariable Integer id){
+        System.out.println("deleted");
     }
     
 }
