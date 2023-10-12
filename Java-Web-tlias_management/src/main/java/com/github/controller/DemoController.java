@@ -11,4 +11,10 @@ public class DemoController {
     public void HelloWorld(){
         System.out.println("Hello World");
     }
+
+    @PostMapping("/depts")
+    public void depts(){
+        System.out.println("depts");
+    }
+    
 }
