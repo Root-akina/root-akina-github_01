@@ -25,4 +25,10 @@ public class DemoController {
     public void what(){
         System.out.println("why empty");
     }
+    void getAvgScore(){
+        int k = 0;
+        for (int i = 0; i <10; i++) {
+            k=(i+k)/i;
+        }
+    }
 }
